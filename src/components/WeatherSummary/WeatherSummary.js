@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './WeatherSummary.module.scss';
 
 const WeatherSummary = ({city, temp, icon, description}) => {
@@ -16,5 +17,12 @@ const WeatherSummary = ({city, temp, icon, description}) => {
     </section>
   );
 };
+
+WeatherSummary.propTypes = {
+  city: PropTypes.string.isRequired,
+  temp: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+}
 
 export default WeatherSummary;

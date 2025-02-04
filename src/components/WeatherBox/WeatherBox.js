@@ -4,7 +4,7 @@ import WeatherSummary from '../WeatherSummary/WeatherSummary';
 import Loader from '../Loader/Loader';
 import ErrorBox from '../ErrorBox/ErrorBox';
 
-const WeatherBox = props => {
+const WeatherBox = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState(false);
